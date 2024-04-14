@@ -4,7 +4,7 @@ import pyttsx3
 recognizer = s.Recognizer()
 
 def record_audio():
-    with s.Microphone() as source:
+    with s.Microphone() as source: 
         speak("Listening...")
         print("listening....")
         audio = recognizer.listen(source)
