@@ -10,7 +10,7 @@ def record_audio():
         audio = recognizer.listen(source)
     return audio
 
-def recognize_speech(audio):
+def recognize_speech(audio):   
     try:
         text = recognizer.recognize_google(audio)
         speak(f"You said: {text}")
